@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="Sello placeholder de afiliación">
+  <circle cx="80" cy="80" r="76" fill="none" stroke="#1c5c8c" stroke-width="2" opacity="0.55"/>
+  <circle cx="80" cy="80" r="64" fill="none" stroke="#d9b36a" stroke-width="1" opacity="0.7"/>
+  <path d="M80 52 v34 M66 64 h28" stroke="#1c5c8c" stroke-width="4" stroke-linecap="round" opacity="0.7"/>
+  <text x="80" y="118" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="11" letter-spacing="1.5" fill="#1c5c8c" opacity="0.75">MIEMBRO</text>
+  <text x="80" y="134" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="9" letter-spacing="1" fill="#1c5c8c" opacity="0.55">(placeholder)</text>
+  <path id="arc" d="M24 80 A56 56 0 0 1 136 80" fill="none"/>
+  <text font-family="Georgia, serif" font-size="12" fill="#1c5c8c" opacity="0.7"><textPath href="#arc" startOffset="50%" text-anchor="middle">· AFILIACIÓN ·</textPath></text>
+</svg>

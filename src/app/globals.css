@@ -1,26 +1,253 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ═══════════════════════════════════════════════════════════════════════════
+   DESIGN TOKENS — "Luz y cielo"
+   Paleta celeste + blanco con acento dorado/champán puntual.
+   Las variables --color-celeste* / --color-gold / --color-ink se sobreescriben
+   en :root desde el layout (site.theme), así un cambio de hex recolorea todo.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* Escala celeste */
+  --color-sky-50: #eaf6fd;
+  --color-sky-100: #d6ecfa;
+  --color-sky-200: #b6dcf3;
+  --color-sky-300: #8ac7ea;
+  --color-sky-400: #5fb3e2;
+  --color-sky-500: #3fa7e0; /* primario */
+  --color-sky-600: #2b80b8;
+  --color-sky-700: #1c5c8c; /* profundo */
+  --color-sky-800: #143f60;
+  --color-sky-900: #0e2a40; /* tinta — texto principal */
+
+  /* Blancos / superficies */
+  --color-paper: #ffffff;
+  --color-ivory: #fbfcfe; /* marfil frío para alternar secciones */
+
+  /* Acento dorado / champán */
+  --color-gold-300: #f0dba8; /* glow claro */
+  --color-gold-500: #d9b36a; /* acento */
+  --color-gold-600: #c39a4f;
+
+  /* Neutros azulados */
+  --color-mist-200: #dce6ee;
+  --color-mist-400: #a9bdcc;
+  --color-mist-600: #6b8298;
+
+  /* Alias tematizables (se reasignan en :root vía site.theme) */
+  --color-celeste: #3fa7e0;
+  --color-celeste-deep: #1c5c8c;
+  --color-gold: #d9b36a;
+  --color-surface: #fbfcfe;
+  --color-ink: #0e2a40;
+
+  /* Tipografía (variables fijadas por next/font en el layout) */
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+
+  /* Radios — sistema generoso */
+  --radius-xs: 8px;
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+
+  /* Sombras blandas "luz cenital" — nunca sombra dura */
+  --shadow-soft: 0 20px 60px -20px rgba(28, 92, 140, 0.25);
+  --shadow-lift: 0 28px 80px -28px rgba(28, 92, 140, 0.35);
+  --shadow-glow: 0 0 0 1px rgba(217, 179, 106, 0.35), 0 16px 40px -16px rgba(217, 179, 106, 0.45);
+
+  /* Motion tokens */
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 200ms;
+  --dur-mid: 350ms;
+  --dur-slow: 600ms;
+
+  /* Tipografía fluida con clamp() */
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
+  --text-3xl: clamp(2rem, 1.5rem + 2.2vw, 3rem);
+  --text-4xl: clamp(2.6rem, 1.8rem + 3.4vw, 4.2rem);
+  --text-5xl: clamp(3.2rem, 2rem + 5vw, 5.6rem);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ─────────────────────────────────────────────────────────────────────────
+   BASE
+   ───────────────────────────────────────────────────────────────────────── */
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+  }
+
+  * {
+    border-color: var(--color-mist-200);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv01";
+  }
+
+  ::selection {
+    background: var(--color-gold-300);
+    color: var(--color-sky-900);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-celeste);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-mist-400);
+    border-radius: 999px;
+    border: 3px solid var(--color-ivory);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ─────────────────────────────────────────────────────────────────────────
+   UTILIDADES DE ATMÓSFERA — gradientes amanecer, grano, mallas
+   ───────────────────────────────────────────────────────────────────────── */
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-body { font-family: var(--font-sans); }
+
+  .bg-dawn {
+    background:
+      radial-gradient(120% 80% at 50% -10%, var(--color-sky-100) 0%, transparent 55%),
+      radial-gradient(90% 60% at 85% 0%, color-mix(in srgb, var(--color-gold-300) 40%, transparent) 0%, transparent 45%),
+      var(--color-ivory);
+  }
+
+  .bg-dawn-strong {
+    background:
+      radial-gradient(130% 90% at 50% -20%, var(--color-sky-200) 0%, transparent 60%),
+      radial-gradient(80% 60% at 10% 10%, color-mix(in srgb, var(--color-gold-300) 55%, transparent) 0%, transparent 50%),
+      linear-gradient(180deg, var(--color-sky-50), var(--color-paper));
+  }
+
+  .bg-deep {
+    background:
+      radial-gradient(120% 90% at 70% -10%, color-mix(in srgb, var(--color-sky-600) 60%, transparent) 0%, transparent 55%),
+      radial-gradient(90% 70% at 0% 100%, color-mix(in srgb, var(--color-gold-500) 22%, transparent) 0%, transparent 50%),
+      linear-gradient(160deg, var(--color-sky-900), var(--color-sky-800));
+  }
+
+  .bg-mesh {
+    background-image:
+      radial-gradient(at 12% 18%, color-mix(in srgb, var(--color-sky-300) 45%, transparent) 0px, transparent 45%),
+      radial-gradient(at 88% 12%, color-mix(in srgb, var(--color-gold-300) 40%, transparent) 0px, transparent 42%),
+      radial-gradient(at 60% 92%, color-mix(in srgb, var(--color-sky-200) 55%, transparent) 0px, transparent 48%);
+  }
+
+  .noise-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("/textures/noise.svg");
+    background-size: 180px 180px;
+  }
+
+  .rule-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-gold-500), transparent);
+  }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-lift { box-shadow: var(--shadow-lift); }
+
+  .text-gradient-sky {
+    background: linear-gradient(120deg, var(--color-sky-700), var(--color-sky-500) 55%, var(--color-gold-500));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   ANIMACIONES — page-load orquestado + scroll reveals
+   ───────────────────────────────────────────────────────────────────────── */
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(0.82); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .animate-rise {
+    opacity: 0;
+    animation: rise var(--dur-slow) var(--ease-out-expo) forwards;
+  }
+  .animate-fade {
+    opacity: 0;
+    animation: fade var(--dur-slow) ease forwards;
+  }
+  .animate-float { animation: float-soft 6s ease-in-out infinite; }
+  .animate-pulse-live { animation: pulse-live 1.4s ease-in-out infinite; }
+  .animate-marquee { animation: marquee 38s linear infinite; }
+
+  .delay-1 { animation-delay: 0.08s; }
+  .delay-2 { animation-delay: 0.18s; }
+  .delay-3 { animation-delay: 0.30s; }
+  .delay-4 { animation-delay: 0.44s; }
+  .delay-5 { animation-delay: 0.60s; }
+  .delay-6 { animation-delay: 0.78s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-rise,
+  .animate-fade { opacity: 1 !important; transform: none !important; }
 }
