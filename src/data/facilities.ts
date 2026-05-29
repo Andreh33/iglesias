@@ -12,7 +12,7 @@ export const facilities: Facility[] = [
       es: "Nuestro templo principal, un espacio amplio y luminoso donde la congregación se reúne para adorar cada semana.",
       en: "Our main sanctuary, a spacious and bright space where the congregation gathers to worship each week.",
     },
-    image: "/images/facility-1.svg",
+    image: "/images/facility-1.jpg",
     details: [
       { es: "Aforo para 800 personas", en: "Seating for 800 people" },
       { es: "Sonido e iluminación profesionales", en: "Professional sound and lighting" },
@@ -29,7 +29,7 @@ export const facilities: Facility[] = [
       es: "Un punto de encuentro acogedor para compartir un café, conversar y crear comunidad antes y después de los servicios.",
       en: "A cozy meeting point to share a coffee, talk and build community before and after services.",
     },
-    image: "/images/facility-2.svg",
+    image: "/images/facility-2.jpg",
     details: [
       { es: "Abierta los domingos de 9:00 a 14:00", en: "Open Sundays from 9:00 to 14:00" },
       { es: "Opciones veganas y sin gluten", en: "Vegan and gluten-free options" },
@@ -47,7 +47,7 @@ export const facilities: Facility[] = [
       es: "Un espacio seguro, colorido y pensado para que los más pequeños aprendan sobre Dios mientras juegan.",
       en: "A safe, colorful space designed for little ones to learn about God while they play.",
     },
-    image: "/images/facility-3.svg",
+    image: "/images/facility-3.jpg",
     details: [
       { es: "Para niños de 0 a 11 años", en: "For children aged 0 to 11" },
       { es: "Personal formado y voluntarios verificados", en: "Trained staff and screened volunteers" },
@@ -64,7 +64,7 @@ export const facilities: Facility[] = [
       es: "Salas versátiles equipadas para grupos pequeños, estudios bíblicos, talleres y cursos de formación.",
       en: "Versatile rooms equipped for small groups, Bible studies, workshops and training courses.",
     },
-    image: "/images/facility-4.svg",
+    image: "/images/facility-4.jpg",
     details: [
       { es: "Cuatro salas de 15 a 40 personas", en: "Four rooms for 15 to 40 people" },
       { es: "Proyector y pizarra en cada sala", en: "Projector and whiteboard in each room" },
@@ -81,7 +81,7 @@ export const facilities: Facility[] = [
       es: "Tienda física donde encontrar biblias, libros, música y regalos cristianos seleccionados con cariño.",
       en: "A physical store offering Bibles, books, music and Christian gifts carefully selected with care.",
     },
-    image: "/images/facility-5.svg",
+    image: "/images/facility-5.jpg",
     details: [
       { es: "Abierta tras cada servicio", en: "Open after every service" },
       { es: "Pedidos por encargo disponibles", en: "Special orders available" },
@@ -98,7 +98,7 @@ export const facilities: Facility[] = [
       es: "Estudio profesional desde donde producimos y emitimos nuestros programas de radio y televisión.",
       en: "A professional studio from which we produce and broadcast our radio and television programs.",
     },
-    image: "/images/facility-6.svg",
+    image: "/images/facility-6.jpg",
     details: [
       { es: "Emisión en directo y bajo demanda", en: "Live and on-demand broadcasting" },
       { es: "Cabina de locución insonorizada", en: "Soundproof broadcasting booth" },
@@ -115,7 +115,7 @@ export const facilities: Facility[] = [
       es: "Amplio aparcamiento gratuito para que tu visita sea cómoda desde el primer momento.",
       en: "A large free parking area so your visit is comfortable from the very first moment.",
     },
-    image: "/images/facility-7.svg",
+    image: "/images/facility-7.jpg",
     details: [
       { es: "120 plazas gratuitas", en: "120 free spaces" },
       { es: "Plazas reservadas para movilidad reducida", en: "Reserved spaces for reduced mobility" },

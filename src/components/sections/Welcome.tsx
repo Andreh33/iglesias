@@ -24,7 +24,7 @@ export async function Welcome() {
           />
           <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[var(--radius-lg)] shadow-lift ring-1 ring-mist-200">
             <Image
-              src="/images/pastor.svg"
+              src="/images/pastor.jpg"
               alt={t("signature")}
               fill
               sizes="(max-width: 1024px) 80vw, 40vw"

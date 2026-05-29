@@ -19,7 +19,7 @@ export async function CampsTeaser() {
       <Reveal>
         <div className="relative isolate overflow-hidden rounded-[var(--radius-lg)] shadow-lift noise-overlay">
           <Image
-            src="/images/camps-hero.svg"
+            src="/images/camps-hero.jpg"
             alt=""
             aria-hidden
             fill

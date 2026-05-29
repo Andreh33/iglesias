@@ -49,7 +49,7 @@ export async function generateMetadata({
     openGraph: {
       type: "website",
       siteName: site.identity.name,
-      images: ["/images/og-default.svg"],
+      images: ["/images/og-default.jpg"],
       locale: locale === "es" ? "es_ES" : "en_GB",
     },
     twitter: { card: "summary_large_image" },

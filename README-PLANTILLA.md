@@ -59,9 +59,13 @@ Cada archivo es una lista editable. Todo el texto es **bilingüe**: `{ es: "..."
 | Sello FEREDE | `public/brand/ferede-placeholder.svg` (ver nota legal abajo) |
 | Fotos | `public/images/*` |
 
-> Las imágenes incluidas son **placeholders** generados (SVG celeste).
-> Sustitúyelas por fotos reales (`.jpg`/`.webp`) manteniendo el mismo nombre de
-> archivo, o cambia las rutas en los archivos de `src/data/`.
+> Las **fotos demo** (`public/images/*.jpg`) son imágenes reales de iglesias y
+> momentos de alabanza obtenidas de **Wikimedia Commons** (licencias libres) con
+> `node scripts/fetch-photos.mjs`. Están pensadas como demostración: **sustitúyelas
+> por las fotos de tu iglesia** manteniendo el mismo nombre de archivo, o cambia
+> las rutas en `src/data/`. Los artículos de la tienda siguen siendo placeholders
+> SVG (`product-*.svg`). Revisa la licencia/atribución de cada imagen si decides
+> conservar alguna en producción.
 
 ### 🌍 Textos de la interfaz (botones, etiquetas)
 

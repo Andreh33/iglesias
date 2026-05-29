@@ -33,7 +33,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("subtitle"),
-      images: ["/images/camps-hero.svg"],
+      images: ["/images/camps-hero.jpg"],
     },
   };
 }
@@ -65,7 +65,7 @@ export default async function CampsPage({
       {/* 1 — Hero inmersivo */}
       <section className="relative overflow-hidden bg-deep noise-overlay text-paper">
         <Image
-          src="/images/camps-hero.svg"
+          src="/images/camps-hero.jpg"
           alt={t("title")}
           fill
           priority

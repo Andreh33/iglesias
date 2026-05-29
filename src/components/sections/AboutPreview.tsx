@@ -38,7 +38,7 @@ export async function AboutPreview() {
           />
           <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[var(--radius-lg)] shadow-lift ring-1 ring-mist-200">
             <Image
-              src="/images/about-1.svg"
+              src="/images/about-1.jpg"
               alt={t("previewTitle")}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

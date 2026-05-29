@@ -16,7 +16,7 @@ export const posts: Post[] = [
     author: "Pastor Daniel Ortega",
     date: "2026-04-12",
     readingTime: 6,
-    cover: "/images/post-1.svg",
+    cover: "/images/post-1.jpg",
     featured: true,
     body: [
       {
@@ -78,7 +78,7 @@ export const posts: Post[] = [
     author: "Ana Belén Castaño",
     date: "2026-03-08",
     readingTime: 5,
-    cover: "/images/post-2.svg",
+    cover: "/images/post-2.jpg",
     body: [
       {
         type: "p",
@@ -139,7 +139,7 @@ export const posts: Post[] = [
     author: "Raquel Montoya",
     date: "2026-02-19",
     readingTime: 5,
-    cover: "/images/post-3.svg",
+    cover: "/images/post-3.jpg",
     body: [
       {
         type: "p",
@@ -200,7 +200,7 @@ export const posts: Post[] = [
     author: "Pastor Daniel Ortega",
     date: "2025-11-23",
     readingTime: 6,
-    cover: "/images/post-4.svg",
+    cover: "/images/post-4.jpg",
     body: [
       {
         type: "p",
@@ -261,7 +261,7 @@ export const posts: Post[] = [
     author: "Pastor Esteban Lara",
     date: "2025-09-30",
     readingTime: 7,
-    cover: "/images/post-5.svg",
+    cover: "/images/post-5.jpg",
     body: [
       {
         type: "p",
@@ -322,7 +322,7 @@ export const posts: Post[] = [
     author: "Raquel Montoya",
     date: "2025-08-14",
     readingTime: 4,
-    cover: "/images/post-6.svg",
+    cover: "/images/post-6.jpg",
     body: [
       {
         type: "p",
@@ -376,7 +376,7 @@ export const posts: Post[] = [
     author: "Pastor Esteban Lara",
     date: "2025-07-06",
     readingTime: 6,
-    cover: "/images/post-7.svg",
+    cover: "/images/post-7.jpg",
     body: [
       {
         type: "p",
@@ -437,7 +437,7 @@ export const posts: Post[] = [
     author: "Ana Belén Castaño",
     date: "2026-01-09",
     readingTime: 5,
-    cover: "/images/post-8.svg",
+    cover: "/images/post-8.jpg",
     body: [
       {
         type: "p",
@@ -498,7 +498,7 @@ export const posts: Post[] = [
     author: "Marcos Sandoval",
     date: "2025-10-18",
     readingTime: 6,
-    cover: "/images/post-9.svg",
+    cover: "/images/post-9.jpg",
     body: [
       {
         type: "p",
@@ -559,7 +559,7 @@ export const posts: Post[] = [
     author: "Pastor Daniel Ortega",
     date: "2025-12-15",
     readingTime: 7,
-    cover: "/images/post-10.svg",
+    cover: "/images/post-10.jpg",
     body: [
       {
         type: "p",

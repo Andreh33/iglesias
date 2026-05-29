@@ -10,7 +10,7 @@ export const events: ChurchEvent[] = [
     time: "10:00",
     endTime: "18:00",
     location: { es: "Auditorio principal", en: "Main auditorium" },
-    image: "/images/event-1.svg",
+    image: "/images/event-1.jpg",
     excerpt: {
       es: "Un día completo para afianzar tu fe en la Palabra.",
       en: "A full day to anchor your faith in the Word.",
@@ -28,7 +28,7 @@ export const events: ChurchEvent[] = [
     time: "20:00",
     endTime: "22:00",
     location: { es: "Plaza de la iglesia", en: "Church square" },
-    image: "/images/event-2.svg",
+    image: "/images/event-2.jpg",
     excerpt: {
       es: "Una noche de adoración al aire libre bajo las estrellas.",
       en: "A night of open-air worship under the stars.",
@@ -46,7 +46,7 @@ export const events: ChurchEvent[] = [
     time: "22:00",
     endTime: "03:00",
     location: { es: "Templo central", en: "Central temple" },
-    image: "/images/event-3.svg",
+    image: "/images/event-3.jpg",
     excerpt: {
       es: "Una noche entregada a la oración y la intercesión.",
       en: "A night devoted to prayer and intercession.",
@@ -64,7 +64,7 @@ export const events: ChurchEvent[] = [
     time: "18:30",
     endTime: "21:30",
     location: { es: "Salón de jóvenes", en: "Youth hall" },
-    image: "/images/event-4.svg",
+    image: "/images/event-4.jpg",
     excerpt: {
       es: "Una tarde diseñada por y para la nueva generación.",
       en: "An evening designed by and for the new generation.",
@@ -82,7 +82,7 @@ export const events: ChurchEvent[] = [
     time: "13:30",
     endTime: "16:30",
     location: { es: "Jardín comunitario", en: "Community garden" },
-    image: "/images/event-5.svg",
+    image: "/images/event-5.jpg",
     excerpt: {
       es: "Compartimos la mesa y celebramos la comunidad.",
       en: "We share the table and celebrate community.",
@@ -100,7 +100,7 @@ export const events: ChurchEvent[] = [
     time: "11:00",
     endTime: "19:00",
     location: { es: "Auditorio principal", en: "Main auditorium" },
-    image: "/images/event-6.svg",
+    image: "/images/event-6.jpg",
     excerpt: {
       es: "Herramientas bíblicas para fortalecer el hogar.",
       en: "Biblical tools to strengthen the home.",
@@ -118,7 +118,7 @@ export const events: ChurchEvent[] = [
     time: "19:00",
     endTime: "21:00",
     location: { es: "Templo central", en: "Central temple" },
-    image: "/images/event-7.svg",
+    image: "/images/event-7.jpg",
     excerpt: {
       es: "Villancicos y adoración para celebrar el nacimiento.",
       en: "Carols and worship to celebrate the nativity.",
@@ -136,7 +136,7 @@ export const events: ChurchEvent[] = [
     time: "22:30",
     endTime: "00:30",
     location: { es: "Templo central", en: "Central temple" },
-    image: "/images/event-8.svg",
+    image: "/images/event-8.jpg",
     excerpt: {
       es: "Despedimos el año en gratitud y oración.",
       en: "We see out the year in gratitude and prayer.",

@@ -51,7 +51,7 @@ export async function Hero() {
         <div className="animate-rise delay-3 relative">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[var(--radius-lg)] shadow-lift ring-1 ring-paper/60">
             <Image
-              src="/images/hero-sky.svg"
+              src="/images/hero-sky.jpg"
               alt={site.identity.name}
               fill
               priority
