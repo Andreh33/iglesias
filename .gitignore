@@ -41,3 +41,9 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# review artifacts / harvest caches
+tmp-review/
+scripts/.harvest.json
+scripts/.site-images.json
+scripts/.photo-slots.json

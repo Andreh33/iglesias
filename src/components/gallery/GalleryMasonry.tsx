@@ -20,8 +20,6 @@ export type ResolvedGalleryItem = {
 const CATEGORIES: GalleryCategory[] = [
   "cultos",
   "comunidad",
-  "bautizos",
-  "campamentos",
   "eventos",
   "instalaciones",
 ];
